@@ -38,9 +38,14 @@ public class BasePage extends DriverSetup {
         return getElement(locator).getText();
     }
 
-    public String getAttributeText(By locator , String attributeName) throws InterruptedException {
+    public String getAttributeValue(By locator , String attributeName) throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return getElement(locator).getDomAttribute(attributeName);
+    }
+
+    public String getPropertyValue(By locator, String propertyName) throws InterruptedException {
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        return getElement(locator).getDomProperty(propertyName);
     }
 
     public String getElementCssValue(By locator, String propertyName) throws InterruptedException{
