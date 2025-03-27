@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.ByteArrayInputStream;
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage extends DriverSetup {
     public WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
@@ -19,6 +20,10 @@ public class BasePage extends DriverSetup {
         return getDriver().findElement(locator);
     }
 
+    public List<WebElement> getAllElements(By locator) throws InterruptedException {
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+        return getDriver().findElements(locator);
+    }
     public void clickOnElement(By locator) throws InterruptedException{
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
 //        getElement(locator).click();
@@ -96,5 +101,10 @@ public class BasePage extends DriverSetup {
         js.executeScript("arguments[0].scrollIntoView(true)",getElement(locator));
 
 //        Thread.sleep(3000);
+    }
+
+    public Dimension getDimension(By locator) throws InterruptedException{
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return getElement(locator).getSize();
     }
 }
