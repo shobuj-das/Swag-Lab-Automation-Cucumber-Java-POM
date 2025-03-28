@@ -34,7 +34,7 @@ Feature: Login page
       | "visual_user"             | "secret_sauce" |
 
   Scenario Outline: Login with invalid credentials
-    When User enter <username> in the password field
+    When User enter <username> in the username field
     And User enter <password> in the password field
     And User click on the login button
     Then User should see the <errorMgs> in the login page
@@ -43,7 +43,7 @@ Feature: Login page
       | "standard_user" | "invalidPass"  | "Epic sadface: Username and password do not match any user in this service" |
       | "standard_user" | ""             | "Epic sadface: Password is required"                                        |
       | ""              | "secret_sauce" | "Epic sadface: Username is required"                                        |
-      | ""              | ""invalidPass" | "Epic sadface: Username is required"                                        |
+      | ""              | "invalidPass"  | "Epic sadface: Username is required"                                        |
       | ""              | ""             | "Epic sadface: Username is required"                                        |
       | "invaliduser"   | "secret_sauce" | "Epic sadface: Username and password do not match any user in this service" |
       | "invaliduser"   | ""             | "Epic sadface: Password is required"                                        |

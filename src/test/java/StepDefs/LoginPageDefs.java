@@ -7,7 +7,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Dimension;
-import org.testng.asserts.SoftAssert;
 
 import static StepDefs.Hooks.softAssert;
 import static Utilities.DriverSetup.getDriver;
@@ -94,13 +93,13 @@ public class LoginPageDefs {
     }
 
     @When("User enter {string} in the username field")
-    public void userEnterInTheUsernameField(String arg0) throws InterruptedException{
-        loginPage.writeOnElement(loginPage.username,arg0);
+    public void userEnterInTheUsernameField(String username) throws InterruptedException{
+        loginPage.writeOnElement(loginPage.username,username);
     }
 
     @And("User enter {string} in the password field")
-    public void userEnterInThePasswordFiled(String arg0) throws InterruptedException {
-        loginPage.writeOnElement(loginPage.password,arg0);
+    public void userEnterInThePasswordFiled(String password) throws InterruptedException {
+        loginPage.writeOnElement(loginPage.password,password);
     }
 
     @Then("Page url should be {string}")
@@ -118,8 +117,26 @@ public class LoginPageDefs {
         loginPage.clickOnElement(loginPage.loginButton);
     }
 
-    @Then("User should see the {} in the login page")
-    public void userShouldSeeTheInTheLoginPage(String arg0) throws InterruptedException{
-        softAssert.assertEquals(loginPage.getElementText(loginPage.errorMessage),arg0,"Error message doesn't match");
+    @Then("User should see the {string} in the login page")
+    public void userShouldSeeTheInTheLoginPage(String expErrorMgs) throws InterruptedException{
+//        String actualErrorMgs = loginPage.getElementText(loginPage.errorMessage);
+        String actualErrorMgs = loginPage.getPropertyValue(loginPage.errorMessage,"textContent");
+
+//        System.out.println("Actual size: " + actualErrorMgs.length());
+//        System.out.println("Exp size: " + expErrorMgs.length());
+//
+//        // Compare character by character
+//        int minLength = Math.min(actualErrorMgs.length(), expErrorMgs.length());
+//        for (int i = 0; i < minLength; i++) {
+//            System.out.println("actual: '" + actualErrorMgs.charAt(i) + "' -- exp: '" + expErrorMgs.charAt(i) + "'");
+//        }
+//
+//        // If lengths differ, highlight extra characters
+//        if (actualErrorMgs.length() != expErrorMgs.length()) {
+//            System.out.println("Mismatch in length! Extra characters found in:");
+//            System.out.println(actualErrorMgs.length() > expErrorMgs.length() ? "Actual Error Message" : "Expected Error Message");
+//        }
+
+        softAssert.assertEquals(actualErrorMgs, expErrorMgs, "Error message doesn't match:");
     }
 }
