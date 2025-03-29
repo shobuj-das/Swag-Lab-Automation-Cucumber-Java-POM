@@ -2,11 +2,14 @@ package StepDefs;
 
 import Pages.LoginPage;
 import Pages.ProductPage;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 import static StepDefs.Hooks.softAssert;
 import static Utilities.DriverSetup.getDriver;
@@ -122,21 +125,23 @@ public class LoginPageDefs {
 //        String actualErrorMgs = loginPage.getElementText(loginPage.errorMessage);
         String actualErrorMgs = loginPage.getPropertyValue(loginPage.errorMessage,"textContent");
 
-//        System.out.println("Actual size: " + actualErrorMgs.length());
-//        System.out.println("Exp size: " + expErrorMgs.length());
-//
-//        // Compare character by character
-//        int minLength = Math.min(actualErrorMgs.length(), expErrorMgs.length());
-//        for (int i = 0; i < minLength; i++) {
-//            System.out.println("actual: '" + actualErrorMgs.charAt(i) + "' -- exp: '" + expErrorMgs.charAt(i) + "'");
-//        }
-//
-//        // If lengths differ, highlight extra characters
-//        if (actualErrorMgs.length() != expErrorMgs.length()) {
-//            System.out.println("Mismatch in length! Extra characters found in:");
-//            System.out.println(actualErrorMgs.length() > expErrorMgs.length() ? "Actual Error Message" : "Expected Error Message");
-//        }
-
         softAssert.assertEquals(actualErrorMgs, expErrorMgs, "Error message doesn't match:");
+    }
+
+    @And("User click on the remove button")
+    public void userClickOnTheRemoveButton() throws InterruptedException {
+        loginPage.clickOnElement(loginPage.errorRemoveButton);
+    }
+
+    @Then("The error message should disappear")
+    public void theErrorMessageShouldDisappear() throws InterruptedException{
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
+        boolean isErrorGone = wait.until(ExpectedConditions.invisibilityOfElementLocated(loginPage.errorMessage));
+        softAssert.assertTrue(isErrorGone, "Error not disappear");
+    }
+
+    @But("Username and password should not be removed from the respective fields")
+    public void usernameAndPasswordShouldNotBeRemovedFromTheRespectiveFields() throws InterruptedException{
+        softAssert.assertTrue(loginPage.checkUsernamePasswordField(),"username and password is removed with error message:");
     }
 }

@@ -31,10 +31,8 @@ public class ProductPage extends BasePage{
     // ****************************** Methods related to product page *******************8
     public boolean getAllProducts() throws InterruptedException {
         List<WebElement> allProducts = getAllElements(totalInventoryItem);
-        if (allProducts.size() == 6) // total 6 products should be displayed
-            return true;
-        else
-            return false;
+        // total 6 products should be displayed
+        return allProducts.size() == 6;
     }
 
     // -- ascending order method - A to Z
@@ -51,10 +49,7 @@ public class ProductPage extends BasePage{
     }
     // -- descending order method - Z to A
     public boolean checkDescendingOrder() throws InterruptedException{
-        if(checkAscendingOrder())
-            return false;
-        else
-            return true;
+        return !checkAscendingOrder();
     }
 
     // -- ascending order method - price(low to high)
@@ -62,8 +57,8 @@ public class ProductPage extends BasePage{
         List<WebElement> allProductPriceList = getAllElements(productPrice);
 
         for(int i=1, x=0; i<allProductPriceList.size(); i++,x++ ){
-            Double price1 = Double.parseDouble(allProductPriceList.get(x).getText().replace("$",""));
-            Double price2 = Double.parseDouble(allProductPriceList.get(i).getText().replace("$",""));
+            double price1 = Double.parseDouble(allProductPriceList.get(x).getText().replace("$",""));
+            double price2 = Double.parseDouble(allProductPriceList.get(i).getText().replace("$",""));
 
             if(price1 > price2)
                 return false;
@@ -73,9 +68,7 @@ public class ProductPage extends BasePage{
 
     // -- descending order method - price(high to low)
     public boolean checkPriceDescendingOrder() throws InterruptedException{
-        if(checkPriceAscendingOrder())
-            return false;
-        else
-            return true;
+        return !checkPriceAscendingOrder();
     }
+
 }
