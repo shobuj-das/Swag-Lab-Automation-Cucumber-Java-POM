@@ -5,7 +5,6 @@ import Pages.ProductPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.sl.In;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -23,7 +22,6 @@ public class ProductPageDefs {
         loginPage.writeOnElement(loginPage.username,"standard_user");
         loginPage.writeOnElement(loginPage.password,"secret_sauce");
         loginPage.clickOnElement(loginPage.loginButton);
-        Thread.sleep(2000);
     }
 
     @Then("Product page header should be {string}")
@@ -32,7 +30,7 @@ public class ProductPageDefs {
     }
 
     @And("Page title should be {string}")
-    public void pageTitleShouldBe(String arg0) throws InterruptedException{
+    public void pageTitleShouldBe(String arg0) {
         softAssert.assertEquals(getDriver().getTitle(),arg0,"Product page title mismatched");
     }
 
@@ -77,7 +75,6 @@ public class ProductPageDefs {
     public void theDigitShouldBeVisibleOnTheCartLogo(String arg0) throws InterruptedException{
         softAssert.assertEquals(productPage.getElementText(productPage.totalItemInCart),arg0);
         productPage.addScreenShoot("product added to cart");
-        Thread.sleep(2000);
     }
 
     @And("User add second product to the cart")
