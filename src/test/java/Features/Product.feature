@@ -4,9 +4,6 @@ Feature: Product Page Validation
     And User enter "standard_user" in the username field
     And User enter "secret_sauce" in the password field
     And User click on the login button
-#    Given User on the login page
-#    And User login with valid credentials
-
 
   @ui
   Scenario: UI Validation
