@@ -6,6 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/java/Features",
         glue = "StepDefs",
+//        tags = "@ui",
         plugin ={
                 "pretty",
                 //"html:target/cucumber-reports.html",

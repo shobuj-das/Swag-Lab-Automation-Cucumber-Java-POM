@@ -2,6 +2,7 @@ Feature: Login page
   Background:
     Given User on the login page
 
+  @ui
   Scenario: UI validation
     Then Username field should present
     And Username placeholder should be "Username"
@@ -11,6 +12,8 @@ Feature: Login page
     And Password field should be writable
     And Login button should present
 
+
+  @ui
   Scenario: Login button validation
     Then Login button label should be "Login"
     And Login button color should be "rgba(61, 220, 145, 1)"

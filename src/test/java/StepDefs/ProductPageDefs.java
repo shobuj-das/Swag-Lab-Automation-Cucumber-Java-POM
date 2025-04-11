@@ -67,7 +67,7 @@ public class ProductPageDefs {
     @When("User add first product to the cart")
     public void userAddFirstProductToTheCart() throws InterruptedException{
         List<WebElement> porductList = productPage.getAllElements(productPage.ProductAddToCart);
-        System.out.println("total product item:"+porductList.size());
+//        System.out.println("total product item:"+porductList.size());
         porductList.get(1).click();
     }
 
@@ -80,14 +80,14 @@ public class ProductPageDefs {
     @And("User add second product to the cart")
     public void userAddSecondProductToTheCart() throws InterruptedException {
         List<WebElement> porductList = productPage.getAllElements(productPage.ProductAddToCart);
-        System.out.println("total product item:"+porductList.size());
+//        System.out.println("total product item:"+porductList.size());
         porductList.get(1).click();
     }
 
     @And("User remove first product from the cart")
     public void userRemoveFirstProductFromTheCart() throws InterruptedException{
         List<WebElement> totalProductInCart = productPage.getAllElements(productPage.productRemoveButton);
-        System.out.println("total product item:"+totalProductInCart.size());
+//        System.out.println("total product item:"+totalProductInCart.size());
         totalProductInCart.get(1).click();
     }
 

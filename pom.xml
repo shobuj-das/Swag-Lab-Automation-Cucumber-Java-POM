@@ -107,19 +107,6 @@
       <version>2.29.1</version>
       <scope>test</scope>
     </dependency>
-    <!--    <dependency>-->
-    <!--      <groupId>io.qameta.allure</groupId>-->
-    <!--      <artifactId>allure-cucumber7-jvm</artifactId>-->
-    <!--      <version>2.24.0</version>-->
-    <!--      <exclusions>-->
-    <!--        <exclusion>-->
-    <!--          <groupId>io.cucumber</groupId>-->
-    <!--          <artifactId>gherkin</artifactId>-->
-    <!--        </exclusion>-->
-    <!--      </exclusions>-->
-    <!--    </dependency>-->
-
-    <!-- Manually Add Compatible Gherkin Version -->
     <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
     <dependency>
       <groupId>io.cucumber</groupId>
@@ -154,20 +141,6 @@
         <artifactId>maven-cucumber-reporting</artifactId>
         <version>5.7.7</version>
       </plugin>
-
-      <!-- Allure Maven Plugin -->
-      <!--      <plugin>-->
-      <!--        <groupId>io.qameta.allure</groupId>-->
-      <!--        <artifactId>allure-maven</artifactId>-->
-      <!--        <version>2.24.0</version>-->
-      <!--        <executions>-->
-      <!--          <execution>-->
-      <!--            <goals>-->
-      <!--              <goal>report</goal>-->
-      <!--            </goals>-->
-      <!--          </execution>-->
-      <!--        </executions>-->
-      <!--      </plugin>-->
 
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

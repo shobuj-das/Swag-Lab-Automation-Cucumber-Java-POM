@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8d110d8a-72bd-4b09-a208-0c3696268b7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/LoginPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/LoginPage.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/LoginPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/LoginPageDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Features/Product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Product.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/ProductPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/ProductPageDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,29 +42,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: LoginPage.executor": "Run",
-    "Cucumber Java.Scenario: Adding products to the cart.executor": "Run",
-    "Cucumber Java.Scenario: Checking error message remove button.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°1.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°2.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°7.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials.executor": "Run",
-    "Cucumber Java.Scenario: Login with valid credentials.executor": "Run",
-    "Cucumber Java.Scenario: UI Validation.executor": "Run",
-    "Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z).executor": "Run",
-    "Cucumber Java.Scenario: Validate all products are shown in Descending order when select Price (low to high).executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.TestRunner.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM",
-    "settings.editor.selected.configurable": "io.qameta.allure.idea.settings.AppSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: LoginPage.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Adding products to the cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking error message remove button.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°1.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°2.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°7.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with valid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: UI Validation.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Validate all products are shown in Descending order when select Price (low to high).executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Shobuj/Desktop/FlightExpert-Automation-Demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;io.qameta.allure.idea.settings.AppSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="StepDefs" />
@@ -76,15 +81,14 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestRunner">
-    <configuration name="Scenario: Adding products to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Product" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Product.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Swag-Lab-Automation-Cucumber-Java-POM" />
-      <option name="NAME_FILTER" value="^Adding products to the cart$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Adding products to the cart$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Adding products to the cart" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Product" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -176,10 +180,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.Feature: Product" />
         <item itemvalue="Cucumber Java.Scenario: Checking error message remove button" />
         <item itemvalue="Cucumber Java.Scenario: Validate all products are shown in Descending order when select Price (low to high)" />
         <item itemvalue="Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z)" />
-        <item itemvalue="Cucumber Java.Scenario: Adding products to the cart" />
       </list>
     </recent_temporary>
   </component>
