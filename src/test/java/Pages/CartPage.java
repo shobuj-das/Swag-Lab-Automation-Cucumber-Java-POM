@@ -12,10 +12,13 @@ public class CartPage extends BasePage{
     public By productName = By.className("inventory_item_name");
     public By productDescription = By.className("inventory_item_desc");
     public By productPrice = By.className("inventory-item-price");
-    public By removeButton_css = By.className(".btn.btn_secondary.btn_small.cart_button");
+    public By removeButton_css = By.cssSelector(".btn.btn_secondary.btn_small.cart_button");
 
     public By continueShoppingButton = By.id("continue-shopping");
     public By checkOutButton = By.cssSelector("#checkout");
+
+    public By menuBar = By.id("react-burger-menu-btn");
+    public By allItems = By.id("inventory_sidebar_link");
 
 
 }

@@ -19,7 +19,7 @@ public class ProductPage extends BasePage{
     public By productRemoveButton = By.cssSelector(".btn.btn_secondary.btn_small.btn_inventory");
 
 
-    public By totalItemInCart = By.className("shopping_cart_badge");
+    public By cartBadge= By.className("shopping_cart_badge");
     public By totalInventoryItem = By.cssSelector(".inventory_item");
 
 

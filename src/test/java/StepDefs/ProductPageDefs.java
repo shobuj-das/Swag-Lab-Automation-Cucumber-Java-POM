@@ -73,7 +73,7 @@ public class ProductPageDefs {
 
     @Then("The digit {string} should be visible on the cart logo")
     public void theDigitShouldBeVisibleOnTheCartLogo(String arg0) throws InterruptedException{
-        softAssert.assertEquals(productPage.getElementText(productPage.totalItemInCart),arg0);
+        softAssert.assertEquals(productPage.getElementText(productPage.cartBadge),arg0);
         productPage.addScreenShoot("product added to cart");
     }
 

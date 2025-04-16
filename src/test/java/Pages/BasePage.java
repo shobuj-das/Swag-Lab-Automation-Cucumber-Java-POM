@@ -15,8 +15,8 @@ public class BasePage extends DriverSetup {
     public WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
 
     public WebElement getElement(By locator) throws InterruptedException{
-//        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
-//        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        //WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         return getDriver().findElement(locator);
     }
 
