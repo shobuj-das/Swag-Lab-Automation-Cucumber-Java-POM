@@ -31,14 +31,6 @@ public class CartPageDefs {
 
     @And ("User remove one item from cart")
     public void userRemoveOneItemFromCart() throws InterruptedException{
-//        List<WebElement>allItems = cartPage.getAllElements(cartPage.removeButton);
-//        System.out.println("** items : " + allItems.size());
-//        if(!allItems.isEmpty()){
-//            allItems.get(0).click();
-//        }
-//        else{
-//            System.out.println("No elements found");
-//        }
         cartPage.removeItemFromCart();
     }
 
@@ -59,11 +51,6 @@ public class CartPageDefs {
 
     @And("User remove one item from product page")
     public void userRemoveOneItemFromProductPage() throws InterruptedException {
-//        List<WebElement> allElements = cartPage.getAllElements(productPage.productRemoveButton);
-//        if(!allElements.isEmpty())
-//            allElements.get(0).click();
-//        else
-//            System.out.println("** no element found **");
         productPage.removeItemFormProductPage();
     }
 
