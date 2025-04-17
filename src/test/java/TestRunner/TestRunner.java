@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = "src/test/java/Features/Cart.feature",
+        features = "src/test/java/Features/Checkout.feature",
         glue = "StepDefs",
 //        tags = "@ui",
         plugin ={

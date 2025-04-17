@@ -17,7 +17,7 @@ public class CartPage extends BasePage{
     public By removeButton = By.cssSelector(".btn.btn_secondary.btn_small.cart_button");
 
     public By continueShoppingButton = By.cssSelector("#continue-shopping");
-    public By checkOutButton = By.cssSelector("#checkout");
+    public By checkoutButton = By.cssSelector("#checkout");
 
     public By menuBar = By.id("react-burger-menu-btn");
     public By allItems = By.id("inventory_sidebar_link");

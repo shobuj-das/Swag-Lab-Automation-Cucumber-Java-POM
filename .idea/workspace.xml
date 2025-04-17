@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d110d8a-72bd-4b09-a208-0c3696268b7c" name="Changes" comment="" />
+    <list default="true" id="8d110d8a-72bd-4b09-a208-0c3696268b7c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,8 +41,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Cucumber Java.Feature: Cart.executor": "Run",
+    "Cucumber Java.Feature: Checkout.executor": "Run",
     "Cucumber Java.Feature: LoginPage.executor": "Run",
     "Cucumber Java.Feature: Product.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
     "Cucumber Java.Scenario: Adding products to the cart.executor": "Run",
     "Cucumber Java.Scenario: Cart badge number of product page and cart page should be same.executor": "Run",
     "Cucumber Java.Scenario: Checking error message remove button.executor": "Run",
@@ -80,15 +86,15 @@
       <recent name="Utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml">
-    <configuration name="Feature: Cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestRunner">
+    <configuration name="Feature: Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Swag-Lab-Automation-Cucumber-Java-POM" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Cart" />
+      <option name="SUGGESTED_NAME" value="Feature: Checkout" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -120,15 +126,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Total products in cart and cart badge number should be same" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Swag-Lab-Automation-Cucumber-Java-POM" />
-      <option name="NAME_FILTER" value="^Total products in cart and cart badge number should be same$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Total products in cart and cart badge number should be same$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Total products in cart and cart badge number should be same" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -169,10 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Feature: Checkout" />
         <item itemvalue="TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml" />
         <item itemvalue="Cucumber Java.Scenario: Cart badge number of product page and cart page should be same" />
-        <item itemvalue="Cucumber Java.Feature: Cart" />
-        <item itemvalue="TestNG.TestRunner" />
       </list>
     </recent_temporary>
   </component>
