@@ -31,18 +31,40 @@ public class CartPageDefs {
 
     @And ("User remove one item from cart")
     public void userRemoveOneItemFromCart() throws InterruptedException{
-        List<WebElement>allItems = cartPage.getAllElements(cartPage.removeButton_css);
-        System.out.println("** items : **" + allItems.size());
-        if(!allItems.isEmpty()){
-            allItems.get(0).click();
-        }
-        else{
-            System.out.println("No elements found");
-        }
+//        List<WebElement>allItems = cartPage.getAllElements(cartPage.removeButton);
+//        System.out.println("** items : " + allItems.size());
+//        if(!allItems.isEmpty()){
+//            allItems.get(0).click();
+//        }
+//        else{
+//            System.out.println("No elements found");
+//        }
+        cartPage.removeItemFromCart();
     }
 
     @And("User click on continue shopping")
     public void userClickOnContinueShopping() throws InterruptedException{
         cartPage.clickOnElement(cartPage.continueShoppingButton);
     }
+    // tc-4
+    @Then("User should see {string} items in the cart badge from product page")
+    public void userShouldSeeItemsInTheCartBadgeFromProductPage(String arg0) throws InterruptedException{
+        softAssert.assertEquals(cartPage.getElementText(productPage.cartBadge),arg0,"** cart badge number not matched in product page");
+    }
+
+    @Then("User should see {string} items in the cart badge from cart page")
+    public void userShouldSeeItemsInTheCartBadgeFromCartPage(String arg0) throws InterruptedException {
+        softAssert.assertEquals(cartPage.getElementText(cartPage.cartBadge),arg0,"** cart badge number not matched in cart page");
+    }
+
+    @And("User remove one item from product page")
+    public void userRemoveOneItemFromProductPage() throws InterruptedException {
+//        List<WebElement> allElements = cartPage.getAllElements(productPage.productRemoveButton);
+//        if(!allElements.isEmpty())
+//            allElements.get(0).click();
+//        else
+//            System.out.println("** no element found **");
+        productPage.removeItemFormProductPage();
+    }
+
 }

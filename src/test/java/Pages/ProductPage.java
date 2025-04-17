@@ -16,7 +16,7 @@ public class ProductPage extends BasePage{
     public By productName = By.className("inventory_item_name");
     public By productPrice = By.className("inventory_item_price");
     public By ProductAddToCart = By.cssSelector(".btn.btn_primary.btn_small.btn_inventory");
-    public By productRemoveButton = By.cssSelector(".btn.btn_secondary.btn_small.btn_inventory");
+    public By productRemoveButton = By.xpath("//button[text()='Remove']");
 
 
     public By cartBadge= By.className("shopping_cart_badge");
@@ -28,7 +28,8 @@ public class ProductPage extends BasePage{
     public By productSort = By.className("product_sort_container");
 
 
-    // ****************************** Methods related to product page *******************8
+    // ****************************** Methods related to product page *******************
+
     public boolean getAllProducts() throws InterruptedException {
         List<WebElement> allProducts = getAllElements(totalInventoryItem);
         // total 6 products should be displayed
@@ -71,4 +72,11 @@ public class ProductPage extends BasePage{
         return !checkPriceAscendingOrder();
     }
 
+    public void removeItemFormProductPage() throws InterruptedException {
+        List<WebElement> allElements = getAllElements(productRemoveButton);
+        if(!allElements.isEmpty())
+            allElements.get(0).click();
+        else
+            System.out.println("** no element found **");
+    }
 }

@@ -67,7 +67,6 @@ public class ProductPageDefs {
     @When("User add first product to the cart")
     public void userAddFirstProductToTheCart() throws InterruptedException{
         List<WebElement> porductList = productPage.getAllElements(productPage.ProductAddToCart);
-//        System.out.println("total product item:"+porductList.size());
         porductList.get(1).click();
     }
 

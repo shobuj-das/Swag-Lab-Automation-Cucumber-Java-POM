@@ -24,3 +24,21 @@ Feature: Cart Page Validation
     And User add first product to the cart
     And User add second product to the cart
     Then User should see "3" items in the cart badge
+
+  Scenario: Cart badge number of product page and cart page should be same
+    Then User should see "2" items in the cart badge from product page
+    And User click on the cart
+    Then User should see "2" items in the cart badge from cart page
+    And User click on continue shopping
+    And User add first product to the cart
+    Then User should see "3" items in the cart badge from product page
+    And User click on the cart
+    Then User should see "3" items in the cart badge from cart page
+    And User remove first product from the cart
+    Then User should see "2" items in the cart badge from cart page
+    And User click on continue shopping
+    Then User should see "2" items in the cart badge from product page
+    And User remove one item from product page
+    Then User should see "1" items in the cart badge from product page
+    And User click on the cart
+    Then User should see "1" items in the cart badge from cart page
