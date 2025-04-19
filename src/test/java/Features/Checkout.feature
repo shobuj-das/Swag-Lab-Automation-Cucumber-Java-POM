@@ -31,3 +31,7 @@ Feature: Checkout Page
     And Cancel button height should be "39"
     And Cancel button width should be "218"
     And Cancel button label should be "Cancel"
+
+  Scenario: add product > checkout > input info > continue > finish > back home
+  Scenario: add product > checkout > input info > continue > cancel
+  Scenario: add product > checkout > cancel
