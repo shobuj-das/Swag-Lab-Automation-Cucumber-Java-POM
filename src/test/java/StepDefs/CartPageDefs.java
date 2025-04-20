@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 import static StepDefs.Hooks.softAssert;
-import static Utilities.DriverSetup.getDriver;
 
 public class CartPageDefs {
     CartPage cartPage = new CartPage();
@@ -38,7 +37,6 @@ public class CartPageDefs {
     public void userClickOnContinueShopping() throws InterruptedException{
         cartPage.clickOnElement(cartPage.continueShoppingButton);
     }
-    // tc-4
     @Then("User should see {string} items in the cart badge from product page")
     public void userShouldSeeItemsInTheCartBadgeFromProductPage(String arg0) throws InterruptedException{
         softAssert.assertEquals(cartPage.getElementText(productPage.cartBadge),arg0,"** cart badge number not matched in product page");

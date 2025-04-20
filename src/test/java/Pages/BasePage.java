@@ -107,4 +107,16 @@ public class BasePage extends DriverSetup {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return getElement(locator).getSize();
     }
+    public int getButtonHeight(By locator) throws InterruptedException{
+        Dimension dimension = getDimension(locator);
+        return dimension.getHeight();
+    }
+    public int getButtonWidth(By locator) throws InterruptedException{
+        Dimension dimension = getDimension(locator);
+        return dimension.getWidth();
+    }
+
+    public boolean getElementInvisibilityStatus(By locator){
+        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
 }

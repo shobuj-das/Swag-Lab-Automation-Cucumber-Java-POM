@@ -44,13 +44,17 @@ Feature: Checkout Page
     And User enter "David" on the first name field
     And User enter "Miller" on the last name field
     And User enter "112233" on the postal code field
-    And User click on the continue button
+    And User click on the continue button in step one
     Then User should see all products
     And User should see payment information
     And User should see shipping information
     And User should see item total price
     And User should see total tax
     And User should see total price
+    And User click on the Finish button
+    Then User see the checkout complete message
+    And User see the Back home button
+    And User see the welcome message on the screen
 
 
   Scenario: add product > checkout > input info > continue > cancel
@@ -60,19 +64,29 @@ Feature: Checkout Page
     And User click on the login button
     And User add first product to the cart
     And User add second product to the cart
+    And User click on the cart
+    And User click on the checkout button
     And User enter "David" on the first name field
     And User enter "Miller" on the last name field
-    And User enter "112233" on the postal code field
-    And User click on the continue button
+    And User enter "34134" on the postal code field
+    And User click on the continue button in step one
+    Then User should be on the checkout step two page
+    And User click on the cancel button on step two
+    Then User should be on the product page
 
 
-  Scenario: add product > checkout > cancel
+
+  Scenario: add product >cart> checkout > cancel
     Given User on the login page
     When User enter "standard_user" in the username field
     And User enter "secret_sauce" in the password field
     And User click on the login button
     And User add first product to the cart
     And User add second product to the cart
+    And User click on the cart
+    And User click on the checkout button
+    And User click on the cancel button in step one
+    Then User should on the cart page
 
 
   Scenario: add product > checkout > validate information input fields
@@ -82,7 +96,20 @@ Feature: Checkout Page
     And User click on the login button
     And User add first product to the cart
     And User add second product to the cart
-    And User enter "David" on the first name field
+    And User click on the cart
+    And wait for a while
+    And User click on the checkout button
     And User enter "Miller" on the last name field
     And User enter "112233" on the postal code field
-    And User click on the continue button
+    And User click on the continue button in step one
+    Then User should see the "Error: First Name is required" error message
+    And User click on the error message close button
+#    Then Error message should be invisible
+    And User enter "David" on the first name field
+    And User remove last name
+    And User click on the continue button in step one
+    Then User should see the "Error: Last Name is required" error message
+    And User enter "Miller" on the last name field
+    And User remove postal code
+    And User click on the continue button in step one
+    Then  User should see the "Error: Postal Code is required" error message
