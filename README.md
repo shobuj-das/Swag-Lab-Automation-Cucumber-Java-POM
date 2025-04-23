@@ -9,6 +9,44 @@ This project is a **Cucumber-based automation framework** using **Selenium and T
 - **TestNG** (v7.8.0)
 - **Allure Reporting** (v2.24.0)
 
+### Page Object Model Structure
+CucumberProject/
+│
+├── src/
+│   └── test/
+│       └── java/
+│           ├── Features/                           # Gherkin feature files
+│           │   ├── Cart.feature
+│           │   ├── Checkout.feature
+│           │   ├── LoginPage.feature
+│           │   └── Product.feature
+│           │
+│           ├── Pages/                              # Page Object classes
+│           │   ├── BasePage.java
+│           │   ├── LoginPage.java
+│           │   ├── ProductPage.java
+│           │   ├── CartPage.java
+│           │   ├── CheckOut_complete.java
+│           │   ├── checkout_step_1.java
+│           │   └── checkout_step_2.java
+│           │
+│           ├── StepDefs/                           # Step definitions
+│           │   ├── Hooks.java
+│           │   ├── LoginPageDefs.java
+│           │   ├── ProductPageDefs.java
+│           │   ├── CartPageDefs.java
+│           │   └── CheckoutPageDefs.java
+│           │
+│           ├── TestRunner/                         # Cucumber runner class
+│           │   └── TestRunner.java
+│           │
+│           └── Utilities/                          # Utility classes (e.g., WebDriver setup)
+│               └── DriverSetup.java
+│
+├── pom.xml                                          # Maven build and dependency file
+└── README.md                                        # Project documentation
+
+
 ### Login feature:
 ```gherkin
 Feature: Login page
