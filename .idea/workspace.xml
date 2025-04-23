@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8d110d8a-72bd-4b09-a208-0c3696268b7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/CartPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CartPageDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/CheckoutPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CheckoutPageDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -178,8 +185,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: Cart" />
         <item itemvalue="Cucumber Java.Feature: Checkout" />
+        <item itemvalue="Cucumber Java.Feature: Cart" />
         <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml" />
       </list>

@@ -1,0 +1,1 @@
+{"uuid":"bb496cf8-4eb3-4a46-9732-79998887dc21","name":"Scenario: Remove and add items to cart should decrease and increase the number from cart badge","children":["74d19ee9-afd2-42ef-8b39-e75fa69489a8"],"befores":[],"afters":[],"start":1745263245109,"stop":1745263245817}

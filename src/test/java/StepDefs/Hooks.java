@@ -1,7 +1,9 @@
 package StepDefs;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -12,15 +14,15 @@ public class Hooks {
     public static String browserName = System.getProperty("browser", "Chrome");
     public static SoftAssert softAssert;
 
-    @Before
-    public void beforeScenario() throws InterruptedException {
+    @BeforeAll
+    public static void beforeScenario() throws InterruptedException {
         openABrowser(browserName);
         softAssert = new SoftAssert();
     }
 
 
-    @After
-    public void afterScenario() throws InterruptedException {
+    @AfterAll
+    public static void afterScenario() throws InterruptedException {
         try {
             softAssert.assertAll(); // Ensure all soft assertions are checked
         } catch (AssertionError e) {

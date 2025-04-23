@@ -5,6 +5,9 @@ import org.openqa.selenium.By;
 public class Checkout_Step_2 extends BasePage {
     // ---- messages
     public By checkoutMessage = By.xpath("//span[@class='title']");
+    public By paymentInfo = By.xpath("//div[normalize-space()='Payment Information:']");
+    public By shippingInfo = By.xpath("//div[normalize-space()='Shipping Information:']");
+
 
     public By prices = By.xpath("//div[@class='inventory_item_price']");
     public By itemTotalPrice =  By.xpath("//div[@class='summary_subtotal_label']");

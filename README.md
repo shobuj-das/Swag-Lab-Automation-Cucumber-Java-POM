@@ -169,6 +169,37 @@ Feature: Product Page Validation
     When User select "Price (high to low)" from the sort products
     Then User should see all products in high to low price order
 ```
+
+### 🚀 How to Run the Project
+
+#### ✅ Prerequisites
+
+Make sure the following are installed:
+
+- **Java JDK 8+**
+- **Apache Maven**
+- **An IDE** (e.g., IntelliJ IDEA, Eclipse)
+- **Google Chrome** (or update the WebDriver accordingly)
+
+---
+
+#### 📦 Install Dependencies
+
+```bash
+    mvn clean install
+```
+#### 🧪 Run Tests
+
+**Option 1: Run from Terminal**
+
+```bash
+    mvn test
+```
+**Option 2: Run from IDE**
+
+- Navigate to: `src/test/java/TestRunner/TestRunner.java`
+- Right-click on the file → Select **Run 'TestRunner'**
+
 ### Report:
 ![img.png](screenshoots/img.png)
 ![img_2.png](screenshoots/img_2.png)

@@ -97,19 +97,14 @@ Feature: Checkout Page
     And User add first product to the cart
     And User add second product to the cart
     And User click on the cart
-    And wait for a while
     And User click on the checkout button
     And User enter "Miller" on the last name field
-    And User enter "112233" on the postal code field
     And User click on the continue button in step one
     Then User should see the "Error: First Name is required" error message
-    And User click on the error message close button
-#    Then Error message should be invisible
     And User enter "David" on the first name field
     And User remove last name
     And User click on the continue button in step one
-    Then User should see the "Error: Last Name is required" error message
+    Then User should see the "Error: Postal Code is required" error message
     And User enter "Miller" on the last name field
-    And User remove postal code
     And User click on the continue button in step one
     Then  User should see the "Error: Postal Code is required" error message

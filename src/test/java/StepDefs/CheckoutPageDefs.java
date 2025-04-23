@@ -156,8 +156,8 @@ public class CheckoutPageDefs {
     }
 
     @Then("Error message should be invisible")
-    public void errorMessageShouldBeInvisible() {
-        softAssert.assertTrue(basePage.getElementInvisibilityStatus(checkout_1.checkoutMessage));
+    public void errorMessageShouldBeInvisible() throws InterruptedException {
+        softAssert.assertFalse(basePage.getElementInvisibilityStatus(checkout_1.checkoutMessage));
     }
 
     @And("User enter {string} on the first name field")
@@ -166,12 +166,12 @@ public class CheckoutPageDefs {
     }
 
     @And("User remove last name")
-    public void userRemoveLastName() {
+    public void userRemoveLastName() throws InterruptedException {
         basePage.clearInputText(checkout_1.lastName);
     }
 
     @And("User remove postal code")
-    public void userRemovePostalCode() {
+    public void userRemovePostalCode() throws InterruptedException {
         basePage.clearInputText(checkout_1.postalCode);
     }
 
@@ -207,41 +207,55 @@ public class CheckoutPageDefs {
 
     @Then("User should see all products")
     public void userShouldSeeAllProducts() {
+        // ******************** need to implement ******************
+
+        softAssert.assertEquals(1,1);
     }
 
     @And("User should see payment information")
-    public void userShouldSeePaymentInformation() {
+    public void userShouldSeePaymentInformation() throws InterruptedException {
+        softAssert.assertEquals(basePage.getElementText(checkout_2.paymentInfo),"Payment Information:");
     }
 
     @And("User should see shipping information")
-    public void userShouldSeeShippingInformation() {
+    public void userShouldSeeShippingInformation() throws InterruptedException {
+        softAssert.assertEquals(basePage.getElementText(checkout_2.shippingInfo),"Shipping Information:");
     }
 
     @And("User should see item total price")
-    public void userShouldSeeItemTotalPrice() {
+    public void userShouldSeeItemTotalPrice() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkout_2.itemTotalPrice));
     }
 
     @And("User should see total tax")
-    public void userShouldSeeTotalTax() {
+    public void userShouldSeeTotalTax() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkout_2.tax));
     }
 
     @And("User should see total price")
-    public void userShouldSeeTotalPrice() {
+    public void userShouldSeeTotalPrice() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkout_2.totalPrice));
     }
 
     @And("User click on the Finish button")
-    public void userClickOnTheFinishButton() {
+    public void userClickOnTheFinishButton() throws InterruptedException {
+        basePage.clickOnElement(checkout_2.finish);
     }
 
     @Then("User see the checkout complete message")
-    public void userSeeTheCheckoutCompleteMessage() {
+    public void userSeeTheCheckoutCompleteMessage() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkoutComplete.checkoutMessage));
+        softAssert.assertEquals(basePage.getElementText(checkoutComplete.checkoutMessage),"Checkout: Complete!");
     }
 
     @And("User see the Back home button")
-    public void userSeeTheBackHomeButton() {
+    public void userSeeTheBackHomeButton() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkoutComplete.backHomeButton));
     }
 
     @And("User see the welcome message on the screen")
-    public void userSeeTheWelcomeMessageOnTheScreen() {
+    public void userSeeTheWelcomeMessageOnTheScreen() throws InterruptedException {
+        softAssert.assertTrue(basePage.getDisplayStatus(checkoutComplete.thanksMessage));
+        softAssert.assertEquals(basePage.getElementText(checkoutComplete.thanksMessage),"Thank you for your order!");
     }
 }

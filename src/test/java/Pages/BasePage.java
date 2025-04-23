@@ -29,8 +29,10 @@ public class BasePage extends DriverSetup {
 //        getElement(locator).click();
     }
 
-    public void clearInputText(By locator){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).clear();
+    public void clearInputText(By locator) throws InterruptedException {
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).clear();
+        clickOnElement(locator);
+        getElement(locator).clear();
     }
     public void writeOnElement(By locator, String text) throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -116,7 +118,7 @@ public class BasePage extends DriverSetup {
         return dimension.getWidth();
     }
 
-    public boolean getElementInvisibilityStatus(By locator){
-        return wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    public boolean getElementInvisibilityStatus(By locator) throws InterruptedException {
+        return getElement(locator).isDisplayed();
     }
 }
