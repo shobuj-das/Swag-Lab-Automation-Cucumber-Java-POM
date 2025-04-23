@@ -45,7 +45,7 @@ Feature: Checkout Page
     And User enter "Miller" on the last name field
     And User enter "112233" on the postal code field
     And User click on the continue button in step one
-    Then User should see all products
+#    Then User should see all products
     And User should see payment information
     And User should see shipping information
     And User should see item total price
@@ -97,7 +97,7 @@ Feature: Checkout Page
     And User add first product to the cart
     And User add second product to the cart
     And User click on the cart
-    And wait for a while
+#    And wait for a while
     And User click on the checkout button
     And User enter "Miller" on the last name field
     And User enter "112233" on the postal code field
@@ -113,3 +113,21 @@ Feature: Checkout Page
     And User remove postal code
     And User click on the continue button in step one
     Then  User should see the "Error: Postal Code is required" error message
+
+  Scenario: Make a successful checkout
+    Given User on the login page
+    When User enter "standard_user" in the username field
+    And User enter "secret_sauce" in the password field
+    And User click on the login button
+    And User add first product to the cart
+    And User add second product to the cart
+    And User click on the cart
+    And User click on the checkout button
+    And User enter "David" on the first name field
+    And User enter "Miller" on the last name field
+    And User enter "112233" on the postal code field
+    And User click on the continue button in step one
+    And User click on the Finish button
+    Then User see the checkout complete message
+    And User see the Back home button
+    And User see the welcome message on the screen

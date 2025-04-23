@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8d110d8a-72bd-4b09-a208-0c3696268b7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/CartPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CartPageDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Checkout_userInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/Checkout_Step_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/Checkout_productInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefs/CheckoutPageDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefs/CheckoutPageDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -56,6 +63,7 @@
     "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°7.executor": "Run",
     "Cucumber Java.Scenario: Login with invalid credentials.executor": "Run",
     "Cucumber Java.Scenario: Login with valid credentials.executor": "Run",
+    "Cucumber Java.Scenario: Make a successful checkout.executor": "Run",
     "Cucumber Java.Scenario: Total products in cart and cart badge number should be same.executor": "Run",
     "Cucumber Java.Scenario: UI Validation.executor": "Run",
     "Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z).executor": "Run",
@@ -65,7 +73,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml.executor": "Run",
     "TestNG.TestRunner.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "test",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Shobuj/Desktop/FlightExpert-Automation-Demo",
@@ -90,14 +98,14 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestRunner">
-    <configuration name="Feature: Cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Cart.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Swag-Lab-Automation-Cucumber-Java-POM" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Cart" />
+      <option name="SUGGESTED_NAME" value="Feature: Checkout" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -109,14 +117,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: Checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Make a successful checkout" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/Features/Checkout.feature" />
       <option name="GLUE" value="StepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Swag-Lab-Automation-Cucumber-Java-POM" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Checkout" />
+      <option name="NAME_FILTER" value="^Make a successful checkout$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Make a successful checkout$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Make a successful checkout" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -178,10 +187,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: Cart" />
         <item itemvalue="Cucumber Java.Feature: Checkout" />
-        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Scenario: Make a successful checkout" />
         <item itemvalue="TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml" />
+        <item itemvalue="Cucumber Java.Scenario: " />
       </list>
     </recent_temporary>
   </component>

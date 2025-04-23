@@ -2,7 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 
-public class Checkout_Step_1 extends BasePage{
+public class Checkout_userInfo extends BasePage{
     //  ----- input section -----
     public By firstName = By.id("first-name");
     public By lastName = By.id("last-name");

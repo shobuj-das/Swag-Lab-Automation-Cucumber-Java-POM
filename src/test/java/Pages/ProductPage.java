@@ -18,11 +18,8 @@ public class ProductPage extends BasePage{
     public By ProductAddToCart = By.cssSelector(".btn.btn_primary.btn_small.btn_inventory");
     public By productRemoveButton = By.xpath("//button[text()='Remove']");
 
-
     public By cartBadge= By.className("shopping_cart_badge");
     public By totalInventoryItem = By.cssSelector(".inventory_item");
-
-
 
     // ---- sorting locators
     public By productSort = By.className("product_sort_container");
