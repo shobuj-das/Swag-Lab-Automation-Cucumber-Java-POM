@@ -28,8 +28,8 @@ CucumberProject/
 │           │   ├── ProductPage.java
 │           │   ├── CartPage.java
 │           │   ├── CheckOut_complete.java
-│           │   ├── checkout_step_1.java
-│           │   └── checkout_step_2.java
+│           │   ├── checkout_userInfo.java
+│           │   └── checkout_productInfo.java
 │           │
 │           ├── StepDefs/                        
 │           │   ├── Hooks.java

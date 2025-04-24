@@ -48,40 +48,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: Cart.executor": "Run",
-    "Cucumber Java.Feature: Checkout.executor": "Run",
-    "Cucumber Java.Feature: LoginPage.executor": "Run",
-    "Cucumber Java.Feature: Product.executor": "Run",
-    "Cucumber Java.Scenario: .executor": "Run",
-    "Cucumber Java.Scenario: Adding products to the cart.executor": "Run",
-    "Cucumber Java.Scenario: Cart badge number of product page and cart page should be same.executor": "Run",
-    "Cucumber Java.Scenario: Checking error message remove button.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°1.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°2.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials -  - Example n°7.executor": "Run",
-    "Cucumber Java.Scenario: Login with invalid credentials.executor": "Run",
-    "Cucumber Java.Scenario: Login with valid credentials.executor": "Run",
-    "Cucumber Java.Scenario: Total products in cart and cart badge number should be same.executor": "Run",
-    "Cucumber Java.Scenario: UI Validation.executor": "Run",
-    "Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z).executor": "Run",
-    "Cucumber Java.Scenario: Validate all products are shown in Descending order when select Price (low to high).executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml.executor": "Run",
-    "TestNG.TestRunner.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Shobuj/Desktop/FlightExpert-Automation-Demo",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "io.qameta.allure.idea.settings.AppSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: Cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Checkout.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: LoginPage.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: .executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Adding products to the cart.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Cart badge number of product page and cart page should be same.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Checking error message remove button.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°1.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°2.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials -  - Example n°7.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with invalid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Login with valid credentials.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Total products in cart and cart badge number should be same.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: UI Validation.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Validate all products are shown in Ascending order when select Name (A to Z).executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Validate all products are shown in Descending order when select Price (low to high).executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/Project Playground/Web Automation Project/Swag-Lab-Cucumber-Java-POM/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Shobuj/Desktop/FlightExpert-Automation-Demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;io.qameta.allure.idea.settings.AppSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Project Playground\Web Automation Project\Swag-Lab-Cucumber-Java-POM\screenshoots" />
