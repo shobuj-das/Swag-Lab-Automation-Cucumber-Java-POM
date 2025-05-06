@@ -14,14 +14,14 @@ public class Hooks {
     public static String browserName = System.getProperty("browser", "Chrome");
     public static SoftAssert softAssert;
 
-    @BeforeAll
+    @Before
     public static void beforeScenario() throws InterruptedException {
         openABrowser(browserName);
         softAssert = new SoftAssert();
     }
 
 
-    @AfterAll
+    @After
     public static void afterScenario() throws InterruptedException {
         try {
             softAssert.assertAll(); // Ensure all soft assertions are checked

@@ -1,0 +1,1 @@
+{"uuid":"1e6cd656-8f36-4af0-8de4-9ad84f184a1a","name":"Scenario: Validate all products are shown in Descending order when select Price (low to high)","children":["073f36bf-2bcb-4dc9-8f75-f66dcaa2e3cd"],"befores":[],"afters":[],"start":1746530810335,"stop":1746530810346}
