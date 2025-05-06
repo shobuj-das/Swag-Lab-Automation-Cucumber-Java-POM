@@ -202,5 +202,5 @@ Make sure the following are installed:
 
 ### Report:
 ![img.png](screenshoots/img.png)
-![img_2.png](screenshoots/img_1.png)
+![img_1.png](screenshoots/img_1.png)
 ![img_3.png](screenshoots/img_2.png)
